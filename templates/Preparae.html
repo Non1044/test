@@ -1,0 +1,36 @@
+{% extends "layout.html"%}
+{% block content%}
+<!-- <h1 class="m-lg-1">Prepare</h1>   -->
+
+<!-- <p/>
+<form class="m-lg-1" action="/prepare" method="POST">
+Admin Password <input type="text" name="pwd"/>
+<input type="submit" value="Prepare"/>
+</form> <p/>
+
+<h2 class="m-lg-1">Verify Admin Password</h2> <br>
+<form class="m-lg-1" action="/verifyadminpwd" method="POST">
+Admin Password <input type="text" name="pwd"/>
+<input type="submit" value="verify"/>
+</form><br> -->
+
+<!-- <h2 class="m-lg-1">Verify Eligible User</h2> <br>
+<form class="m-lg-1" action="/verifyeligible" method="POST">
+Name <input type="text" name="name"/>
+<input type="submit" value="verify"/>
+</form><br> -->
+
+<h2 class="m-lg-1">Verify Registered User</h2> <br>
+<form class="m-lg-1" action="/verifyregistered" method="POST">
+Name <input type="text" name="name"/>
+<input type="submit" value="verify"/>
+</form><br>
+
+<h2 class="m-lg-1" >Verify User Password</h2> <br>
+<form class="m-lg-1"  action="/verifyuserpwd" method="POST">
+Name <input type="text" name="name"/>
+Password <input type="text" name="pwd"/>
+<input type="submit" value="verify"/>
+</form>
+
+{% endblock %}

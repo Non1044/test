@@ -1,0 +1,23 @@
+{% extends "layout.html"%}
+
+{% block content%}
+
+<h2 class="m-lg-1">Verify Eligible User</h2> <br>
+<form class="m-lg-1" action="/verifyeligible" method="POST">
+Name <input type="text" name="name"/>
+<input type="submit" value="verify"/>
+</form><br>
+
+<h2 class="m-lg-1" >Register User</h2><br>
+<form class="m-lg-1" action="/registeruser" method="POST">
+Name <input type="text" name="name"/>
+<input type="submit" value="Register"/>
+</form><br>
+
+<!-- <h2 class="m-lg-1" >Verify User Password</h2> <br>
+<form class="m-lg-1"  action="/verifyuserpwd" method="POST">
+Name <input type="text" name="name"/>
+Password <input type="text" name="pwd"/>
+<input type="submit" value="verify"/>
+</form> -->
+{% endblock %}

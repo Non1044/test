@@ -1,0 +1,14 @@
+{% extends "layout.html"%}
+
+{% block content%}
+<h1 class="m-lg-1" >Send Transfer Tx</h1>
+<p/>
+<form class="m-lg-1"  action="/sendtransfertx" method="POST">
+Date <input type="text" name="date"/> <p/>
+<br>
+Source <input type="text" name="src"/> <p/>
+Target <input type="text" name="target"/> <p/>
+Amount <input type="text" name="amount"/> 
+<input type="submit" value="Send"/>
+</form>
+{% endblock %}

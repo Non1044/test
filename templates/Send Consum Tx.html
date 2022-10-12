@@ -1,0 +1,16 @@
+{% extends "layout.html"%}
+
+
+{% block content%}
+<h1 class="m-lg-1" >Send Consum Tx</h1>
+<p/>
+<form class="m-lg-1"  action="/sendconsumtx" method="POST">
+Date <input type="text" name="date"/> <p/>
+<br>
+Consumer <input type="text" name="cons"/> <p/>
+Password <input type="text" name="pwd"/> <p/>
+Energy type <input type="text" name="etype"/> <p/>
+Amount <input type="text" name="amount"/> 
+<input type="submit" value="Send"/>
+</form>
+{% endblock %}
