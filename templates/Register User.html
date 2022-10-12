@@ -1,18 +1,44 @@
-{% extends "layout.html"%}
+<!-- {% extends "layout.html"%}
 
-{% block content%}
+{% block content%} -->
+<!DOCTYPE html>
+<html lang="en">
 
-<h2 class="m-lg-1">Verify Eligible User</h2> <br>
-<form class="m-lg-1" action="/verifyeligible" method="POST">
-Name <input type="text" name="name"/>
-<input type="submit" value="verify"/>
-</form><br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
 
-<h2 class="m-lg-1" >Register User</h2><br>
-<form class="m-lg-1" action="/registeruser" method="POST">
-Name <input type="text" name="name"/>
-<input type="submit" value="Register"/>
-</form><br>
+<body>
+    <div class="bg">
+        <div class="verify box">
+            <h2 class="">Verify Eligible User</h2> <br>
+            <form class="" action="/verifyeligible" method="POST">
+                <p>Name</p>
+                <div class="input-content">
+                    <input type="text" name="name" class="input-box"/>
+                    <input type="submit" value="Verify" />
+                </div>
+            </form><br>
+        </div>
+        <div class="register box">
+            <h2 class="">Register User</h2><br>
+            <form class="" action="/registeruser" method="POST">
+                <p>Name</p>
+                <div class="input-content">
+                    <input type="text" name="name" class="input-box"/>
+                    <input type="submit" value="Register" />
+                </div>
+            </form><br>
+        </div>
+    </div>
+</body>
+
+</html>
+
 
 <!-- <h2 class="m-lg-1" >Verify User Password</h2> <br>
 <form class="m-lg-1"  action="/verifyuserpwd" method="POST">
@@ -20,4 +46,4 @@ Name <input type="text" name="name"/>
 Password <input type="text" name="pwd"/>
 <input type="submit" value="verify"/>
 </form> -->
-{% endblock %}
+<!-- {% endblock %} -->
