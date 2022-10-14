@@ -205,7 +205,7 @@ def index2():
 
 @app.route('/RegisterUser',methods=['get','post'])
 def index3():
-    return render_template("Register User.html")
+    return render_template("RegisterUser.html")
 
 @app.route('/',methods=['get','post'])
 def index4():

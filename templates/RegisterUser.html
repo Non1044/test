@@ -1,6 +1,4 @@
-<!-- {% extends "layout.html"%}
 
-{% block content%} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +9,62 @@
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.bg{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+}
+h2{
+    background: rgb(87, 87, 255);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 20px;
+}
+.verify{
+    /* margin-right: 20px; */
+    margin-bottom: 10px;
+}
+.verify h2{
+    border-radius: 10px 10px 0 0;
+}
 
+form{
+    padding: 10px;
+}
+
+input.input-box{
+    width: 300px;
+    margin-bottom: 10px;
+    cursor: text;
+}
+input{
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.input-content{
+    display: flex;
+    flex-direction: column;
+}
+</style>
 <body>
     <div class="bg">
         <div class="verify box">
@@ -34,16 +87,9 @@
                 </div>
             </form><br>
         </div>
+        <button onclick="document.location='/'">Back</button>
     </div>
 </body>
-
 </html>
 
 
-<!-- <h2 class="m-lg-1" >Verify User Password</h2> <br>
-<form class="m-lg-1"  action="/verifyuserpwd" method="POST">
-Name <input type="text" name="name"/>
-Password <input type="text" name="pwd"/>
-<input type="submit" value="verify"/>
-</form> -->
-<!-- {% endblock %} -->

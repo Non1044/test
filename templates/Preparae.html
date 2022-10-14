@@ -1,36 +1,93 @@
-{% extends "layout.html"%}
-{% block content%}
-<!-- <h1 class="m-lg-1">Prepare</h1>   -->
 
-<!-- <p/>
-<form class="m-lg-1" action="/prepare" method="POST">
-Admin Password <input type="text" name="pwd"/>
-<input type="submit" value="Prepare"/>
-</form> <p/>
+<!DOCTYPE html>
+<html lang="en">
 
-<h2 class="m-lg-1">Verify Admin Password</h2> <br>
-<form class="m-lg-1" action="/verifyadminpwd" method="POST">
-Admin Password <input type="text" name="pwd"/>
-<input type="submit" value="verify"/>
-</form><br> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.bg{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+}
+h2{
+    background: rgb(87, 87, 255);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 20px;
+}
+.verify{
+    /* margin-right: 20px; */
+    margin-bottom: 10px;
+}
+.verify h2{
+    border-radius: 10px 10px 0 0;
+}
 
-<!-- <h2 class="m-lg-1">Verify Eligible User</h2> <br>
-<form class="m-lg-1" action="/verifyeligible" method="POST">
-Name <input type="text" name="name"/>
-<input type="submit" value="verify"/>
-</form><br> -->
+form{
+    padding: 20px;
+}
 
-<h2 class="m-lg-1">Verify Registered User</h2> <br>
-<form class="m-lg-1" action="/verifyregistered" method="POST">
-Name <input type="text" name="name"/>
-<input type="submit" value="verify"/>
-</form><br>
+input.input-box{
+    width: 300px;
+    margin-bottom: 10px;
+    cursor: text;
 
-<h2 class="m-lg-1" >Verify User Password</h2> <br>
-<form class="m-lg-1"  action="/verifyuserpwd" method="POST">
-Name <input type="text" name="name"/>
-Password <input type="text" name="pwd"/>
-<input type="submit" value="verify"/>
-</form>
+}
+input{
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+}
 
-{% endblock %}
+.input-content{
+    display: flex;
+    flex-direction: column;
+}
+</style>
+<body>
+    <div class="bg">
+        <div class="Verify Registered User">
+            <h2 class="m-lg-1">Verify Registered User</h2> <br>
+            
+            <form class="m-lg-1" action="/verifyregistered" method="POST">
+                Name <input type="text" name="name" />
+                <input type="submit" value="verify" />
+            </form><br>
+        </div>
+    
+
+    <div class="Verify User Password">
+        <h2 class="m-lg-1">Verify User Password</h2> <br>
+        <form class="m-lg-1" action="/verifyuserpwd" method="POST">
+            Name <input type="text" name="name" /><br>
+            Password <input type="text" name="pwd" />
+            <input type="submit" value="verify" />
+        </form>
+    </div>
+    <button onclick="document.location='/'">Back</button>
+    </div>
+</body>
+
+</html>
